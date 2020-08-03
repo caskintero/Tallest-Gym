@@ -1,0 +1,31 @@
+<table class="table">
+        <thead class="thead-dark">
+        <tr>
+          <th class="text-center" colspan="6">Registros Mensualidad</th>
+        </tr>
+
+          <tr>
+            <th scope="col">Fecha Inicio</td>
+            <th scope="col">Fecha Final</td>
+            <th scope="col">Cedula</td>
+            <th scope="col">Nombre</td>
+            <th scope="col">Pago</td>
+            <th scope="col">Referencia</td>
+          </tr>
+        </thead>
+          <?php
+            $ok=$objMensualidad->mostrar_registros($con);
+          while(($datos=mysqli_fetch_assoc($ok))>0)
+          {
+            echo "<tbody><tr>
+              <td>$datos[fecha_inicio]</td>
+              <td>$datos[fecha_final]</td>
+              <td>$datos[cedula]</td>
+              <td>$datos[nombre]</td>
+              <td>$datos[pago]</td>
+              <td>$datos[referencia]</td>
+              
+              </tr> </tbody>";
+          }
+          ?>
+          </table>

@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+.modal{
+	width: 1500px;
+}
+.boton-submit
+{
+	background-color:#1ACBEB;
+	color: #FFFFFF;
+	border-style:hidden;
+}
+.boton-submit:hover
+{
+	border-style:inset;
+	color:#C9E5FF;
+}
+.boton-cancel
+{
+	background-color:#1ACBEB;
+	color: #FFFFFF;
+	border-style:hidden;
+}
+.boton-cancel:hover
+{
+	border-style:inset;
+	color:#C9E5FF;
+}
+.cabecera_tabla
+{
+	font-weight:bold;
+	background-color:#38B0AB;
+	color: #FFFFFF;
+	text-align:center;
+	font-size:14px;
+	width: 100%;
+}
+.tabla_grande
+{
+	width:100%;
+}
+.full_size
+{
+	width:100%;
+}
+.right
+{
+	text-align:right;
+}
+.cabecera_columna
+{
+	font-weight:bold;
+	font-style:italic;
+	width: 100%;
+}
+.boton_agregar
+{
+	font-weight:bold;
+	background-color:#CFC;
+	text-align:center;
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.editar
+{
+	background-color:#fffac6;
+}
+
+.confirmar
+{
+	background-color:#c7e5e1;
+}
+.mensaje_ok{
+	background-color:green;
+	font-weight:bold;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	text-align:center;
+}
+.mensaje_error
+{
+	background-color:#dc3545;
+	font-weight:bold;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	text-align:center;
+}
+.inicio{
+	background-color:#FAF3DD;
+	color: black;
+	font-family:"Arial";
+	font-size: 9px;
+	text-align: center;
+	padding: 29px;
+}
+
+.cnter img{
+	width: 250px;
+	height: 250px;
+}
+
+#avatar{
+	width: 150px;
+	height: 100px;
+	display:block;
+	margin:auto;
+}
+#body_login{
+background: url(../images/fondo.jpg);
+background-size: cover; 
+}
+
+#color{
+	background-color: rgba(68, 87, 150, 0.658);
+
+}
+#color1{
+	background-color: rgba(68, 87, 150, 0.658);
+
+}
+
+.form-control{
+	width: 500px;
+	height: 50px;
+}
+.alerta{
+	font-weight:bold;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	text-align:center;
+}

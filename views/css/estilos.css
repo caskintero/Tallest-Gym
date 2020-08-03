@@ -1,0 +1,308 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#color1{
+	background-color: rgba(02, 02, 02, 0.800);
+
+}
+/* Fin Login*/
+/* Inicio home.php*/
+.imagen img{
+	width:150px;
+	height:150px;
+	margin:auto;
+}
+.formulario{
+  width: 400px;
+}
+.navbar-vertical{
+	background-color:  transparent;
+	background:  url(../images/prueba.jpg);
+	background-size: cover;
+	height: 100%;
+	width: 25.5%;
+	float: left;
+}
+.primer-nav{
+	background-color: rgba(02, 02, 02, 0.800);
+	width: 93%;
+	height: 100%;
+  margin-left: 10px; 
+}
+.nav-segundario{
+	height: 60px;
+	width: 74.5%;
+	float: right;
+}
+.nav-horizontal{
+	background: black;
+  color: white;
+	height: 39px;
+	width: 74.5%;
+	
+}
+/* fin home.php*/
+.mensaje_ok
+{
+	background-color:#259B07;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+}
+.mensaje_error
+{
+  background-color:#dc3545;
+  font-weight:bold;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  text-align:center;
+}
+.alerta
+{
+	
+	text-align:center;
+}
+.centro{
+	width: 100%;
+	height: 92.7vh;
+	float:left;
+}
+
+#hover:hover{
+	background: rgba(02 , 100, 140, 0.658);
+	size: 15px;
+}
+  /*=======================
+    Color de las listas
+  ======================*/
+  .dropdown-item:hover{
+    background-color: rgba(89, 92, 102, 0.658);
+
+  }
+  .red{
+    background: red;
+    color: white;
+  }
+   .green{
+    background: #259B07;
+    color: white;
+  }
+
+.botones{
+  background: #0075a2;
+  color: white;
+}
+.botones:hover{
+  background: rgba(02 , 100, 140, 0.7);
+  color: white;
+}
+
+    /*==================
+    Stylos de inicio
+    =================*/
+
+
+/*=====================================================
+					Tipografia
+======================================================*/
+@font-face{
+    font-family: "RobotoCondensedLight";
+    src: url("../fonts/robotocondensed-light.ttf"), 
+    url("../fonts/robotocondensed-light.eot"), 
+    url("../fonts/robotocondensed-light.woff"), 
+    url("../fonts/robotocondensed-light.woff2"), 
+    url("../fonts/robotocondensed-light.svg");
+}
+@font-face{
+    font-family: "RobotoRegular";
+    src: url("../fonts/roboto-regular.ttf"), 
+    url("../fonts/roboto-regular.eot"), 
+    url("../fonts/roboto-regular.woff"), 
+    url("../fonts/roboto-regular.woff2"), 
+    url("../fonts/roboto-regular.svg");
+}
+@font-face{
+    font-family: "OswaldLight";
+    src: url("../fonts/oswald-light.ttf"), 
+    url("../fonts/oswald-light.eot"), 
+    url("../fonts/oswald-light.woff"), 
+    url("../fonts/oswald-light.woff2"), 
+    url("../fonts/oswald-light.svg");
+}
+/*=====================================================
+					Estilos generales
+======================================================*/
+:root{
+	--color-text: #3F51B5;
+	--primary-color: #2B2B2C;
+	--acent-color: #DB763B;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+		font-family: "RobotoRegular";
+	position: relative;
+	background-color: #fff;
+}
+.text-condensedLight{ font-family: "RobotoCondensedLight"; }
+
+
+
+/*=====================================================
+					Estilos home
+======================================================*/
+/*=============Azulejos o accesos directos(Tiles)*/
+.tile{
+	border: 1px solid #E1E1E1;
+	height: 140px;
+	width: 30%;
+	margin: 0 1%;
+	position: relative;
+	transition: all .3s ease-in-out;
+	overflow: hidden;
+	cursor: pointer;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+.tile:hover .tile-text span{ color: #3F51B5; }
+.tile:hover .tile-icon{
+	color: rgba(0,191,238,.3);
+	transform: scale(1.5) translate(-10px, -10px);
+}
+.tile-text{
+	display: block;
+	height: 140px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.tile-text span,
+.tile-icon{
+	position: absolute;
+	color: rgba(0,0,0,.3);
+	transition: all .3s ease-in-out;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.tile-text span{
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	display: block;
+	font-size: 27px;
+	z-index: 2;
+}
+.tile-icon{
+	bottom: 9px;
+	right: 4px;
+	font-size: 90px;
+	line-height: 67px;
+	z-index: 1;
+}
+/*=============Linea de tiempo (TimeLine)*/
+.timeline-c{
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.timeline-c::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#timeline-c{
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#timeline-c::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background-color: #3F51B5;
+}
+.timeline-c-box{
+  position: relative;
+  margin: 2em 0;
+}
+.timeline-c-box::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.timeline-c-box:first-child {
+  margin-top: 0;
+}
+.timeline-c-box:last-child {
+  margin-bottom: 0;
+}
+.timeline-c-box-icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background-color: #3F51B5;
+}
+.timeline-c-box-icon i{
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+}
+.timeline-c-box-content{
+  position: relative;
+  margin-left: 60px;
+  border-radius: 0.25em;
+  padding: 1em;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #E1E1E1;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.timeline-c-box-content::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.timeline-c-box-content::before{
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 9px solid #E1E1E1;
+}
+.timeline-c-box-content .timeline-date{
+  display: inline-block;
+  color: rgb(119,119,119);
+}
+.timeline-c-box-content p{
+  margin: 1em 0;
+  line-height: 1.6;
+}
+.timeline-c-box-content .timeline-date{
+  float: left;
+  padding: .8em 0;
+}

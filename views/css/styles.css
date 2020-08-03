@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	margin: 0;
+  	height: 100%;
+}
+
+#body_login{
+  background: url(../images/gym.jpg);
+  background-size: cover;
+}
+
+#login{
+	background: rgba(3, 15, 144, 0.80);
+	width: 400px;
+	height: 450px;
+	display: block;
+	color: white;
+	margin: auto;
+	float: right;
+	margin-top: 100px;
+	margin-right: 40px;
+	padding:10px;
+
+}
+#img-login{
+	width:150px;
+	height:150px;
+	margin:auto;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+
+}
+
+#img-login img{
+	display: block;
+	width:150px;
+	height:150px;
+}
+.input-group{
+	padding: 5px;
+}
+#izquierda{
+	width: 400px;
+	height: 450px;
+	display: block;
+	color: white;
+	margin: auto;
+	float: left;
+	margin-top: 100px;
+	margin-left: 40px;
+	padding:10px;
+	
+}
+#izquierda h1{
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+  	font-size: 150px;
+  	color:blue;
+}
+.boton{
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+
+}
+.mensaje_ok
+{
+	background-color:#259B07;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+}
+.mensaje_error
+{
+  background-color:#dc3545;
+  font-weight:bold;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  text-align:center;
+}
+.alerta
+{
+	
+	text-align:center;
+}
+.centro{
+	width: 100%;
+	height: 92.7vh;
+	float:left;
+}
+.icono{
+	font-size: 22px;
+}
+.pointers{
+	font-size: 32px;
+	cursor: pointer;
+}
+.navbar-vertical{
+	font-family: Helvetica, Arial;
+	font-size: 20px;
+}
